@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GEOG 458 Lab 7 - GeoNarrative</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GEOG 458 Lab 7 GeoNarrative</title>
 
   
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
@@ -17,57 +17,70 @@
 </head>
 
 <body>
-  <!-- COVER -->
-  <section id="cover">
-    <div class="cover-bg" aria-hidden="true"></div>
-    <div id="intro">
+  
+  <header class="hero" style="background-image:url('img/cover.jpg')">
+    <div class="hero-card">
       <h1>Seattle: Landmarks & Neighborhood Change</h1>
-      <h2>A simple GeoNarrative for GEOG 458 Lab 7</h2>
-      <p>
-        This GeoNarrative uses scrolling text to guide a map through a few Seattle locations.
-        Each scene triggers a new map view.
-      </p>
-      <p class="small">Author: Emmanual T. • Date: 2/19/26</p>
-      <p class="small">Scroll down ↓</p>
+      <p class="subtitle">A simple GeoNarrative for GEOG 458 Lab 7</p>
+      <p class="meta">Author: Your Name • Date: 2/19/26</p>
+      <p class="hint">Scroll down ↓</p>
     </div>
-  </section>
+  </header>
 
-  <!-- STORY -->
-  <section id="geonarrative">
-    <!-- Sticky Map -->
-    <div id="storyboard">
-      <div id="map"></div>
-    </div>
+  
+  <main id="story">
+    <!-- Fixed map (background) -->
+    <div id="map"></div>
 
     
-    <article class="scene" data-scene="0">
-      <h3>Scene 1: Downtown / Pike Place</h3>
-      <p>
-        Downtown is a major center of jobs, tourism, and transit. Pike Place is one of Seattle’s most
-        well-known landmarks, drawing visitors from all around and supporting local vendors.
-      </p>
-    </article>
+    <section id="features">
+      <div class="step" data-step="overview">
+        <h2>Overview</h2>
+        <p>
+          This story moves through three Seattle places. As you scroll, the map
+          will fly to each location and show a popup.
+        </p>
+      </div>
 
-    
-    <article class="scene" data-scene="1">
-      <h3>Scene 2: University of Washington</h3>
-      <p>
-        UW shapes the U-District through heavy student housing demand, transportation, and nearby businesses in the area.
-        Large institutions can influence neighborhood change over time.
-      </p>
-    </article>
+      <div class="step" data-step="downtown">
+        <h2>Downtown / Pike Place</h2>
+        <p>
+          Downtown Seattle has long been a center of tourism and commerce, and the waterfront area
+          continues to change with redevelopment and public projects.
+        </p>
+      </div>
 
-    
-    <article class="scene" data-scene="2">
-      <h3>Scene 3: Rainier Valley (Columbia City)</h3>
-      <p>
-        Rainier Valley is known for its cultural diversity and community spaces. New development and transit
-        can bring benefits, but can also raise affordability concerns for long time and new residents.
-      </p>
-    </article>
-  </section>
+      <div class="step" data-step="uw">
+        <h2>University of Washington</h2>
+        <p>
+          The U-District reflects the impact of UW through high student housing demand, transit, and constant
+          neighborhood development.
+        </p>
+      </div>
 
+      <div class="step" data-step="rainier">
+        <h2>Rainier Valley (Columbia City)</h2>
+        <p>
+          Rainier Valley is known for cultural diversity and neighborhood identity, while also
+          experiencing growth and change along major transit developments.
+        </p>
+      </div>
 
+      <div class="step end">
+        <h2>Ending</h2>
+        <p>
+          These three places show how different parts of Seattle experience change in different ways which are
+          through tourism, institutions, and community identity.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>GEOG 458 Lab 7 • Built with Mapbox + Scrollama</p>
+  </footer>
+
+  
   <script src="js/main.js"></script>
 </body>
 </html>
