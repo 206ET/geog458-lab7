@@ -5,50 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GEOG 458 Lab 7 - GeoNarrative</title>
 
-  <!-- Mapbox -->
+  
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
 
-  <!-- Scrollama -->
+  
   <script src="https://unpkg.com/scrollama"></script>
 
-  <!-- CSS -->
+  
   <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
+  <!-- COVER -->
+  <section id="cover">
+    <div class="cover-bg" aria-hidden="true"></div>
+    <div id="intro">
+      <h1>Seattle: Landmarks & Neighborhood Change</h1>
+      <h2>A simple GeoNarrative for GEOG 458 Lab 7</h2>
+      <p>
+        This GeoNarrative uses scrolling text to guide a map through a few Seattle locations.
+        Each scene triggers a new map view.
+      </p>
+      <p class="small">Author: Emmanual T. • Date: 2/19/26</p>
+      <p class="small">Scroll down ↓</p>
+    </div>
+  </section>
 
-<section id="cover">
-  <div class="cover-bg"></div>
-  <div id="intro">
-    <h1>Seattle: Landmarks & Neighborhood Change</h1>
-    <p>A simple GeoNarrative for GEOG 458 Lab 7</p>
-    <p>Scroll down ↓</p>
-  </div>
-</section>
+  <!-- STORY -->
+  <section id="geonarrative">
+    <!-- Sticky Map -->
+    <div id="storyboard">
+      <div id="map"></div>
+    </div>
 
-<section id="geonarrative">
-  <div id="storyboard">
-    <div id="map"></div>
-  </div>
+    
+    <article class="scene" data-scene="0">
+      <h3>Scene 1: Downtown / Pike Place</h3>
+      <p>
+        Downtown is a major center of jobs, tourism, and transit. Pike Place is one of Seattle’s most
+        well-known landmarks, drawing visitors from all around and supporting local vendors.
+      </p>
+    </article>
 
-  <article class="scene" data-scene="0">
-    <h3>Downtown Seattle</h3>
-    <p>Pike Place and the downtown core represent tourism, commerce, and transit.</p>
-  </article>
+    
+    <article class="scene" data-scene="1">
+      <h3>Scene 2: University of Washington</h3>
+      <p>
+        UW shapes the U-District through heavy student housing demand, transportation, and nearby businesses in the area.
+        Large institutions can influence neighborhood change over time.
+      </p>
+    </article>
 
-  <article class="scene" data-scene="1">
-    <h3>University of Washington</h3>
-    <p>UW shapes housing, transportation, and development in the U-District.</p>
-  </article>
+    
+    <article class="scene" data-scene="2">
+      <h3>Scene 3: Rainier Valley (Columbia City)</h3>
+      <p>
+        Rainier Valley is known for its cultural diversity and community spaces. New development and transit
+        can bring benefits, but can also raise affordability concerns for long time and new residents.
+      </p>
+    </article>
+  </section>
 
-  <article class="scene" data-scene="2">
-    <h3>Rainier Valley (Columbia City)</h3>
-    <p>A diverse neighborhood experiencing development and transit change.</p>
-  </article>
-</section>
 
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
-
