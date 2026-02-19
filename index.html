@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GEOG 458 Lab 7 - GeoNarrative</title>
+
+  <!-- Mapbox -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+
+  <!-- Scrollama -->
+  <script src="https://unpkg.com/scrollama"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+
+<section id="cover">
+  <div class="cover-bg"></div>
+  <div id="intro">
+    <h1>Seattle: Landmarks & Neighborhood Change</h1>
+    <p>A simple GeoNarrative for GEOG 458 Lab 7</p>
+    <p>Scroll down ↓</p>
+  </div>
+</section>
+
+<section id="geonarrative">
+  <div id="storyboard">
+    <div id="map"></div>
+  </div>
+
+  <article class="scene" data-scene="0">
+    <h3>Downtown Seattle</h3>
+    <p>Pike Place and the downtown core represent tourism, commerce, and transit.</p>
+  </article>
+
+  <article class="scene" data-scene="1">
+    <h3>University of Washington</h3>
+    <p>UW shapes housing, transportation, and development in the U-District.</p>
+  </article>
+
+  <article class="scene" data-scene="2">
+    <h3>Rainier Valley (Columbia City)</h3>
+    <p>A diverse neighborhood experiencing development and transit change.</p>
+  </article>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
 
