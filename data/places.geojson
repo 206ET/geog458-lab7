@@ -1,1 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Downtown / Pike Place",
+        "description": "Seattle’s historic market district and a major center of tourism, commerce, and transit."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.3421, 47.6097]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "University of Washington",
+        "description": "A major public university that shapes housing demand, transportation, and neighborhood development."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.3035, 47.6553]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Rainier Valley (Columbia City)",
+        "description": "A culturally diverse neighborhood experiencing transit-oriented development and community change."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.2813, 47.5580]
+      }
+    }
+  ]
+}
 
